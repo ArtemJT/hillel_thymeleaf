@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/common :: common_header(~{::title}, _)">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Welcome</title>
+</head>
+
+<header>
+    <div class="top_bar">
+        <h1>[[#{app.title}]]</h1>
+        <button class="user_button">User Name</button>
+    </div>
+    <div class="vertical-menu">
+        <h2>MENU</h2>
+        <a href="#" class="active">Welcome</a>
+        <a href="#">Info</a>
+    </div>
+</header>
+
+<body>
+
+</body>
+
+<footer>
+    <h3>Footer Title</h3>
+    <p>© 2018 Artem Kovalov</p>
+</footer>
+
+</html>
