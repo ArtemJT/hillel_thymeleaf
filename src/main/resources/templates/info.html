@@ -1,29 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head th:replace="fragments/common :: common_header(~{::title}, _)">
+<head th:replace="fragments/common :: common_head(_, _)">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Welcome</title>
+    <title></title>
 </head>
-
-<header>
-    <div class="top_bar">
-        <h1>[[#{app.title}]]</h1>
-        <button class="user_button">User Name</button>
-    </div>
-    <div class="vertical-menu">
-        <h2>MENU</h2>
-        <a href="#" class="active">Welcome</a>
-        <a href="#">Info</a>
-    </div>
-</header>
-
+<header th:insert="fragments/common :: header"></header>
 <body>
-
+<div>
+    <h1>MILLIS NOW: [[${time}]]</h1>
+</div>
 </body>
-
-<footer>
-    <h3>Footer Title</h3>
-    <p>© 2018 Artem Kovalov</p>
-</footer>
-
+<footer th:insert="fragments/common :: footer"></footer>
 </html>

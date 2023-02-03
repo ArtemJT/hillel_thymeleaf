@@ -1,22 +1,19 @@
 # ДЗ 30. Thymeleaf
 
-### Reference Documentation
+1. Создать Spring Boot проект с зависимостями: web, thymeleaf, Lombok
 
-For further reference, please consider the following sections:
+2. Создать ендпоинт для страницы: welcome
 
-* [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
-* [Spring Boot Maven Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/2.7.8/maven-plugin/reference/html/)
-* [Create an OCI image](https://docs.spring.io/spring-boot/docs/2.7.8/maven-plugin/reference/html/#build-image)
-* [Spring Boot DevTools](https://docs.spring.io/spring-boot/docs/2.7.8/reference/htmlsingle/#using.devtools)
-* [Spring Web](https://docs.spring.io/spring-boot/docs/2.7.8/reference/htmlsingle/#web)
-* [Thymeleaf](https://docs.spring.io/spring-boot/docs/2.7.8/reference/htmlsingle/#web.servlet.spring-mvc.template-engines)
+3. Создать дизайн страницы подобный:
 
-### Guides
+![img.png](img.png)
 
-The following guides illustrate how to use some features concretely:
+4. Заполнить «год» текущим годом, полученным из сервера.
 
-* [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
-* [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
-* [Building REST services with Spring](https://spring.io/guides/tutorials/rest/)
-* [Handling Form Submission](https://spring.io/guides/gs/handling-form-submission/)
+5. Заголовок страницы взять из properties (#{….})
 
+6. Добавить кнопку “info”в меню, которая ведет на страницу /info (@{….}). На странице info, просто вывести на экран текущее системное время в милисекундах.
+
+Внимание! На странице info должена быть такая же структура: хедер, футер, меню
+
+В меню д б 2 кнопки: welcome, info
